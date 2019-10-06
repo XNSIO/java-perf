@@ -49,25 +49,21 @@ public class ForDataMapper {
         fieldFunctions.put("_35", (data1, pair) -> data1.set_35(pair.getValue()));
     }
 
-    public void execute(List<Pair<String, String>> input) {
+    public Boolean execute(List<Pair<String, String>> input) {
         for (int i = 0; i < input.size(); i++) {
             Pair<String, String> pair = input.get(i);
             BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         }
+        return true;
     }
 
     public BucketData getData() {
         return data;
     }
 
-    public static boolean executeFor(List<Pair<String, String>> input) {
-        ForDataMapper dataMapper = new ForDataMapper();
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        return true;
+    public static Boolean _execute(List<Pair<String, String>> input) {
+        return new ForDataMapper().execute(input);
     }
-
 }

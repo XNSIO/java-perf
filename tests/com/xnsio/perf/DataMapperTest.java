@@ -8,18 +8,18 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class DataMapperTest {
+    private final List<Pair<String, String>> input = Main.buildInput();
+
     @Test
     public void test() {
-        List<Pair<String, String>> input = Main.buildInput();
         StreamDataMapper dataMapper = new StreamDataMapper();
-        dataMapper.executeWithStream(input);
+        dataMapper.execute(input);
         assertDataBucket(dataMapper.getData());
     }
 
     @Test
     public void testPrimitive() throws Exception {
         PrimitiveDataMapper dataMapper = new PrimitiveDataMapper();
-        List<Pair<String, String>> input = Main.buildInput();
         dataMapper.execute(input);
         assertDataBucket(dataMapper.getData());
     }

@@ -7,7 +7,7 @@ import java.util.List;
 public class PrimitiveDataMapper {
     private BucketData data = new BucketData();
 
-    public void execute(List<Pair<String, String>> input) {
+    public Boolean execute(List<Pair<String, String>> input) {
         for (Pair<String, String> pair : input)
 
             if (pair.getKey().equalsIgnoreCase("_1"))
@@ -80,18 +80,14 @@ public class PrimitiveDataMapper {
                 data.set_34(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("_35"))
                 data.set_35(pair.getValue());
-
+        return true;
     }
 
     public BucketData getData() {
         return data;
     }
 
-    public static boolean executePrimitive(List<Pair<String, String>> input) {
-        PrimitiveDataMapper dataMapper = new PrimitiveDataMapper();
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        return true;
+    public static Boolean _execute(List<Pair<String, String>> input) {
+        return new PrimitiveDataMapper().execute(input);
     }
 }

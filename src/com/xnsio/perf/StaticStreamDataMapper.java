@@ -49,23 +49,20 @@ public class StaticStreamDataMapper {
         }
     };
 
-    public void executeWithStream(List<Pair<String, String>> input) {
+    public Boolean execute(List<Pair<String, String>> input) {
         input.forEach(pair -> {
             BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         });
+        return true;
     }
 
     public BucketData getData() {
         return data;
     }
 
-    public static boolean executeStream(List<Pair<String, String>> input) {
-        StaticStreamDataMapper dataMapper = new StaticStreamDataMapper();
-        dataMapper.executeWithStream(input);
-        dataMapper.executeWithStream(input);
-        dataMapper.executeWithStream(input);
-        return true;
+    public static Boolean _execute(List<Pair<String, String>> input) {
+        return new StaticStreamDataMapper().execute(input);
     }
 }

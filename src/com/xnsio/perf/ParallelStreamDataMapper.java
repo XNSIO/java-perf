@@ -49,24 +49,20 @@ public class ParallelStreamDataMapper {
         fieldFunctions.put("_35", (data1, pair) -> data1.set_35(pair.getValue()));
     }
 
-    public void executeWithParallelStream(List<Pair<String, String>> input) {
+    public Boolean execute(List<Pair<String, String>> input) {
         input.parallelStream().forEach(pair -> {
             BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         });
+        return true;
     }
 
     public BucketData getData() {
         return data;
     }
 
-    public static boolean executeParallelStream(List<Pair<String, String>> input) {
-        ParallelStreamDataMapper dataMapper = new ParallelStreamDataMapper();
-        dataMapper.executeWithParallelStream(input);
-        dataMapper.executeWithParallelStream(input);
-        dataMapper.executeWithParallelStream(input);
-        return true;
+    public static Boolean _execute(List<Pair<String, String>> input) {
+        return new ParallelStreamDataMapper().execute(input);
     }
-
 }

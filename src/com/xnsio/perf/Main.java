@@ -13,37 +13,43 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         List<Pair<String, String>> input = buildInput();
         int loopCount = args.length == 1 ? Integer.parseInt(args[0]) : 20000;
-        execute(input, loopCount, "---For---", ForDataMapper::executeFor);
-        execute(input, loopCount, "---ForEach---", ForEachDataMapper::executeForEach);
-        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
-        execute(input, loopCount, "---Stream---", StreamDataMapper::executeStream);
-        execute(input, loopCount, "---Static Stream---", StaticStreamDataMapper::executeStream);
-        execute(input, loopCount, "---Parallel Streams---", ParallelStreamDataMapper::executeParallelStream);
-        execute(input, loopCount, "---Non Lambda Streams---", NonLambdaStreamDataMapper::executeStream);
+        execute(input, loopCount, "--- For - Single Instance ---", new ForDataMapper()::execute);
+        execute(input, loopCount, "--- For - New Instance ---", ForDataMapper::_execute);
+        execute(input, loopCount, "--- ForEach - Single Instance ---", new ForEachDataMapper()::execute);
+        execute(input, loopCount, "--- ForEach - New Instance ---", ForEachDataMapper::_execute);
+        execute(input, loopCount, "--- Primitive - Single Instance ---", new PrimitiveDataMapper()::execute);
+        execute(input, loopCount, "--- Primitive - New Instance ---", PrimitiveDataMapper::_execute);
+        execute(input, loopCount, "--- Stream - Single Instance ---", new StreamDataMapper()::execute);
+        execute(input, loopCount, "--- Stream - New Instance ---", StreamDataMapper::_execute);
+        execute(input, loopCount, "--- Static Stream - Single Instance ---", new StaticStreamDataMapper()::execute);
+        execute(input, loopCount, "--- Static Stream - New Instance ---", StaticStreamDataMapper::_execute);
+        execute(input, loopCount, "--- Parallel Streams - Single Instance ---", new ParallelStreamDataMapper()::execute);
+        execute(input, loopCount, "--- Parallel Streams - New Instance ---", ParallelStreamDataMapper::_execute);
+        execute(input, loopCount, "--- Non Lambda Streams - Single Instance ---", new NonLambdaStreamDataMapper()::execute);
+        execute(input, loopCount, "--- Non Lambda Streams - New Instance ---", NonLambdaStreamDataMapper::_execute);
     }
 
     private static void execute(final List<Pair<String, String>> input, int loopCount, String name, Function<List<Pair<String, String>>, Boolean> function)
             throws InterruptedException {
         Runtime runtime = getRuntime();
         System.gc();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         long startTime = nanoTime();
         long initialMemoryUsed = memUsed(runtime);
         for (int i = 0; i < loopCount; ++i)
             function.apply(input);
-        // IntStream.range(0, loopCount).forEach(i->function.apply(input));
         long timeElapsed = nanoTime() - startTime;
         long afterMemoryUsed = memUsed(runtime);
-        System.out.println(name + " Mem consumed (B:" + initialMemoryUsed + ") & (A:" + afterMemoryUsed + "): "
+        System.out.print(name + " Mem consumed (" + afterMemoryUsed  + " - " +  initialMemoryUsed + ") = "
                 + (afterMemoryUsed - initialMemoryUsed) / (1024 * 1024) + " MB");
-        System.out.println(name + " Execution time: " + (timeElapsed / 1000000) + " milliseconds");
+        System.out.println(" & Execution time: " + (timeElapsed / 1000000) + " milli-secs");
     }
 
     private static long memUsed(Runtime runtime) {
         return runtime.totalMemory() - runtime.freeMemory();
     }
 
-    public static List<Pair<String, String>> buildInput() {
+    static List<Pair<String, String>> buildInput() {
         List<Pair<String, String>> input = new ArrayList<>();
         input.add(new Pair<>("_1", "1"));
         input.add(new Pair<>("_2", "2"));
