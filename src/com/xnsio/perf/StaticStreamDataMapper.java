@@ -24,6 +24,28 @@ public class StaticStreamDataMapper {
             put("eleven", (data, pair) -> data.setEleven(pair.getValue()));
             put("twelve", (data, pair) -> data.setTwelve(pair.getValue()));
             put("thirteen", (data, pair) -> data.setThirteen(pair.getValue()));
+            put("14", (data, pair) -> data.set_14(pair.getValue()));
+            put("15", (data, pair) -> data.set_15(pair.getValue()));
+            put("16", (data, pair) -> data.set_16(pair.getValue()));
+            put("17", (data, pair) -> data.set_17(pair.getValue()));
+            put("18", (data, pair) -> data.set_18(pair.getValue()));
+            put("19", (data, pair) -> data.set_19(pair.getValue()));
+            put("20", (data, pair) -> data.set_20(pair.getValue()));
+            put("21", (data, pair) -> data.set_21(pair.getValue()));
+            put("22", (data, pair) -> data.set_22(pair.getValue()));
+            put("23", (data, pair) -> data.set_23(pair.getValue()));
+            put("24", (data, pair) -> data.set_24(pair.getValue()));
+            put("25", (data, pair) -> data.set_25(pair.getValue()));
+            put("26", (data, pair) -> data.set_26(pair.getValue()));
+            put("27", (data, pair) -> data.set_27(pair.getValue()));
+            put("28", (data, pair) -> data.set_28(pair.getValue()));
+            put("29", (data, pair) -> data.set_29(pair.getValue()));
+            put("30", (data, pair) -> data.set_30(pair.getValue()));
+            put("31", (data, pair) -> data.set_31(pair.getValue()));
+            put("32", (data, pair) -> data.set_32(pair.getValue()));
+            put("33", (data, pair) -> data.set_33(pair.getValue()));
+            put("34", (data, pair) -> data.set_34(pair.getValue()));
+            put("35", (data, pair) -> data.set_35(pair.getValue()));
         }
     };
 

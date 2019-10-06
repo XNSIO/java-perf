@@ -9,6 +9,7 @@ public class PrimitiveDataMapper {
 
     public void execute(List<Pair<String, String>> input) {
         for (Pair<String, String> pair : input)
+
             if (pair.getKey().equalsIgnoreCase("One"))
                 data.setOne(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("Two"))
@@ -35,6 +36,51 @@ public class PrimitiveDataMapper {
                 data.setTwelve(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("Thirteen"))
                 data.setThirteen(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("14"))
+                data.set_14(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("15"))
+                data.set_15(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("16"))
+                data.set_16(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("17"))
+                data.set_17(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("18"))
+                data.set_18(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("19"))
+                data.set_19(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("20"))
+                data.set_20(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("21"))
+                data.set_21(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("22"))
+                data.set_22(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("23"))
+                data.set_23(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("24"))
+                data.set_24(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("25"))
+                data.set_25(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("26"))
+                data.set_26(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("27"))
+                data.set_27(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("28"))
+                data.set_28(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("29"))
+                data.set_29(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("30"))
+                data.set_30(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("31"))
+                data.set_31(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("32"))
+                data.set_32(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("33"))
+                data.set_33(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("34"))
+                data.set_34(pair.getValue());
+            else if (pair.getKey().equalsIgnoreCase("35"))
+                data.set_35(pair.getValue());
+
     }
 
     public BucketData getData() {

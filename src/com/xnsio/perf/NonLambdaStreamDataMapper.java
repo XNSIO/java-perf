@@ -92,6 +92,7 @@ public class NonLambdaStreamDataMapper {
                 data.setThirteen(pair.getValue());
             }
         });
+
     }
 
     public void executeWithStream(List<Pair<String, String>> input) {
