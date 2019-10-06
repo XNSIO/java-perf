@@ -96,12 +96,18 @@ public class NonLambdaStreamDataMapper {
     }
 
     public Boolean execute(List<Pair<String, String>> input) {
+        go(input);
+        go(input);
+        go(input);
+        return true;
+    }
+
+    private void go(List<Pair<String, String>> input) {
         input.forEach(pair -> {
             Function consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.execute(data, pair);
         });
-        return true;
     }
 
     public BucketData getData() {
@@ -109,6 +115,9 @@ public class NonLambdaStreamDataMapper {
     }
 
     public static Boolean _execute(List<Pair<String, String>> input) {
-        return new NonLambdaStreamDataMapper().execute(input);
+        NonLambdaStreamDataMapper dataMapper = new NonLambdaStreamDataMapper();
+        dataMapper.execute(input);
+        dataMapper.execute(input);
+        return dataMapper.execute(input);
     }
 }
