@@ -13,9 +13,9 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         List<Pair<String, String>> input = buildInput();
         int loopCount = args.length == 1 ? Integer.parseInt(args[0]) : 20000;
-        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
         execute(input, loopCount, "---For---", ForDataMapper::executeFor);
         execute(input, loopCount, "---ForEach---", ForEachDataMapper::executeForEach);
+        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
         execute(input, loopCount, "---Stream---", StreamDataMapper::executeStream);
         execute(input, loopCount, "---Static Stream---", StaticStreamDataMapper::executeStream);
         execute(input, loopCount, "---Parallel Streams---", ParallelStreamDataMapper::executeParallelStream);
@@ -35,8 +35,8 @@ public class Main {
         long timeElapsed = nanoTime() - startTime;
         long afterMemoryUsed = memUsed(runtime);
         System.out.println(name + " Mem consumed (B:" + initialMemoryUsed + ") & (A:" + afterMemoryUsed + "): "
-                + (afterMemoryUsed - initialMemoryUsed) / (1024 * 1024) + "MB");
-        System.out.println(name + " Execution time in milliseconds: " + timeElapsed / 1000000);
+                + (afterMemoryUsed - initialMemoryUsed) / (1024 * 1024) + " MB");
+        System.out.println(name + " Execution time: " + (timeElapsed / 1000000) + " milliseconds");
     }
 
     private static long memUsed(Runtime runtime) {
