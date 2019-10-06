@@ -4,9 +4,11 @@ When you run the main method, you will notice that [StaticStreamDataMapper](src/
 
 When we create new instance in the loop, I don't understand why [StreamDataMapper](src/com/xnsio/perf/StreamDataMapper.java) is taking 30x more memory?
 
-Also notice, how [NonLambdaStreamDataMapper](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) performs better than [Stream with Lambdas](src/com/xnsio/perf/StreamDataMapper.java)
+Also, I'm not sure why [Loop with if-else](src/com/xnsio/perf/PrimitiveDataMapper.java) is performing so badly. Why is the compiler not optimising it?
 
-As expected, [PrimitiveDataMapper](src/com/xnsio/perf/PrimitiveDataMapper.java) is performing the worst. The overheads of spanning a thread is not worth when we are performing a trivial operation inside the parallel stream.
+Important: Notice, how [NonLambdaStreamDataMapper](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) performs better than [Stream with Lambdas](src/com/xnsio/perf/StreamDataMapper.java)
+
+As expected, [ParallelStreamDataMapper](src/com/xnsio/perf/ParallelStreamDataMapper.java) is performing the worst. The overheads of spanning a thread is not worth when we are performing a trivial operation inside the parallel stream.
 
 Below is the stats from one of the runs
 
