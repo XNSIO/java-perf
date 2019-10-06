@@ -13,11 +13,11 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         List<Pair<String, String>> input = buildInput();
         int loopCount = args.length == 1 ? Integer.parseInt(args[0]) : 20000;
+        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
         execute(input, loopCount, "---For---", ForDataMapper::executeFor);
         execute(input, loopCount, "---ForEach---", ForEachDataMapper::executeForEach);
         execute(input, loopCount, "---Stream---", StreamDataMapper::executeStream);
         execute(input, loopCount, "---Static Stream---", StaticStreamDataMapper::executeStream);
-        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
         execute(input, loopCount, "---Parallel Streams---", ParallelStreamDataMapper::executeParallelStream);
         execute(input, loopCount, "---Non Lambda Streams---", NonLambdaStreamDataMapper::executeStream);
     }
@@ -58,6 +58,28 @@ public class Main {
         input.add(new Pair<>("Eleven", "11"));
         input.add(new Pair<>("Twelve", "12"));
         input.add(new Pair<>("Thirteen", "13"));
+        input.add(new Pair<>("_14", "14"));
+        input.add(new Pair<>("_15", "15"));
+        input.add(new Pair<>("_16", "16"));
+        input.add(new Pair<>("_17", "17"));
+        input.add(new Pair<>("_18", "18"));
+        input.add(new Pair<>("_19", "19"));
+        input.add(new Pair<>("_20", "20"));
+        input.add(new Pair<>("_21", "21"));
+        input.add(new Pair<>("_22", "22"));
+        input.add(new Pair<>("_23", "23"));
+        input.add(new Pair<>("_24", "24"));
+        input.add(new Pair<>("_25", "25"));
+        input.add(new Pair<>("_26", "26"));
+        input.add(new Pair<>("_27", "27"));
+        input.add(new Pair<>("_28", "28"));
+        input.add(new Pair<>("_29", "29"));
+        input.add(new Pair<>("_30", "30"));
+        input.add(new Pair<>("_31", "31"));
+        input.add(new Pair<>("_32", "32"));
+        input.add(new Pair<>("_33", "33"));
+        input.add(new Pair<>("_34", "34"));
+        input.add(new Pair<>("_35", "35"));
         return input;
     }
 }

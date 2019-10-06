@@ -14,6 +14,133 @@ public class BucketData {
     private String eleven;
     private String twelve;
     private String thirteen;
+    private String _14;
+    private String _15;
+    private String _16;
+    private String _17;
+    private String _18;
+    private String _19;
+    private String _20;
+    private String _21;
+    private String _22;
+    private String _23;
+    private String _24;
+    private String _25;
+    private String _26;
+    private String _27;
+    private String _28;
+    private String _29;
+    private String _30;
+    private String _31;
+    private String _32;
+    private String _33;
+    private String _34;
+    private String _35;
+
+    public String getOne() {
+        return one;
+    }
+
+    public void setOne(String one) {
+        this.one = one;
+    }
+
+    public String getTwo() {
+
+        return two;
+    }
+
+    public void setTwo(String two) {
+        this.two = two;
+    }
+
+    public String getThree() {
+        return three;
+    }
+
+    public void setThree(String three) {
+        this.three = three;
+    }
+
+    public String getFour() {
+        return four;
+    }
+
+    public void setFour(String four) {
+        this.four = four;
+    }
+
+    public String getFive() {
+        return five;
+    }
+
+    public void setFive(String five) {
+        this.five = five;
+    }
+
+    public String getSix() {
+        return six;
+    }
+
+    public void setSix(String six) {
+        this.six = six;
+    }
+
+    public String getSeven() {
+        return seven;
+    }
+
+    public void setSeven(String seven) {
+        this.seven = seven;
+    }
+
+    public String getEight() {
+        return eight;
+    }
+
+    public void setEight(String eight) {
+        this.eight = eight;
+    }
+
+    public String getNine() {
+        return nine;
+    }
+
+    public void setNine(String nine) {
+        this.nine = nine;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+
+    public String getEleven() {
+        return eleven;
+    }
+
+    public void setEleven(String eleven) {
+        this.eleven = eleven;
+    }
+
+    public String getTwelve() {
+        return twelve;
+    }
+
+    public void setTwelve(String twelve) {
+        this.twelve = twelve;
+    }
+
+    public String getThirteen() {
+        return thirteen;
+    }
+
+    public void setThirteen(String thirteen) {
+        this.thirteen = thirteen;
+    }
 
     public String get_14() {
         return _14;
@@ -183,160 +310,6 @@ public class BucketData {
         this._35 = _35;
     }
 
-    private String _14;
-    private String _15;
-    private String _16;
-    private String _17;
-    private String _18;
-    private String _19;
-    private String _20;
-    private String _21;
-    private String _22;
-    private String _23;
-    private String _24;
-    private String _25;
-    private String _26;
-    private String _27;
-    private String _28;
-    private String _29;
-    private String _30;
-    private String _31;
-    private String _32;
-    private String _33;
-    private String _34;
-    private String _35;
-
-    public String getOne() {
-        cpuIntentisive();
-        return one;
-    }
-
-    public void setOne(String one) {
-        cpuIntentisive();
-        this.one = one;
-    }
-
-    public String getTwo() {
-
-        return two;
-    }
-
-    public void setTwo(String two) {
-        cpuIntentisive();
-        this.two = two;
-    }
-
-    public String getThree() {
-        return three;
-    }
-
-    public void setThree(String three) {
-        cpuIntentisive();
-        this.three = three;
-    }
-
-    public String getFour() {
-        return four;
-    }
-
-    public void setFour(String four) {
-        cpuIntentisive();
-        this.four = four;
-    }
-
-    public String getFive() {
-        return five;
-    }
-
-    public void setFive(String five) {
-        this.five = five;
-    }
-
-    public String getSix() {
-        return six;
-    }
-
-    public void setSix(String six) {
-        cpuIntentisive();
-        this.six = six;
-    }
-
-    public String getSeven() {
-        return seven;
-    }
-
-    public void setSeven(String seven) {
-        cpuIntentisive();
-        this.seven = seven;
-    }
-
-    public String getEight() {
-        return eight;
-    }
-
-    public void setEight(String eight) {
-        cpuIntentisive();
-        this.eight = eight;
-    }
-
-    public String getNine() {
-        return nine;
-    }
-
-    public void setNine(String nine) {
-        cpuIntentisive();
-        this.nine = nine;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        cpuIntentisive();
-        this.ten = ten;
-    }
-
-    public String getEleven() {
-        return eleven;
-    }
-
-    public void setEleven(String eleven) {
-        cpuIntentisive();
-        this.eleven = eleven;
-    }
-
-    public String getTwelve() {
-        return twelve;
-    }
-
-    public void setTwelve(String twelve) {
-        cpuIntentisive();
-        this.twelve = twelve;
-    }
-
-    public String getThirteen() {
-        return thirteen;
-    }
-
-    public void setThirteen(String thirteen) {
-        cpuIntentisive();
-        this.thirteen = thirteen;
-    }
-
-
-    public static void cpuIntentisive() {
-       /* int num = 1000;
-        long factorial = 1;
-        for(int i = 1; i <= num; ++i)
-        {
-            // factorial = factorial * i;
-            factorial *= i;
-        }
-        return factorial;*/
-        //System.out.printf("Factorial of %d = %d", num, factorial);
-    }
-
     public String get_22() {
         return _22;
     }
@@ -345,7 +318,4 @@ public class BucketData {
         this._22 = _22;
     }
 
-    public void DoNothing() {
-
-    }
 }
