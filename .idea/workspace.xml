@@ -108,8 +108,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="331">
-                <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <first_editor relative-caret-position="171">
+                <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -902,7 +902,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570351142228</updated>
-      <workItem from="1570351143577" duration="12252000" />
+      <workItem from="1570351143577" duration="12417000" />
     </task>
     <task id="LOCAL-00001" summary="cleanup">
       <created>1570352001930</created>
@@ -960,7 +960,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570379613966</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Improving readme.md file">
+      <created>1570379947814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570379947814</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -981,7 +988,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12252000" />
+    <option name="totallyTimeSpent" value="12417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -1062,9 +1069,9 @@
     <MESSAGE value="Fixed broken tests&#10;also made all values consistent" />
     <MESSAGE value="Refactoring&#10;Added single instance and new instance" />
     <MESSAGE value="Refactoring&#10;executing 3 times per call&#10;Added single instance and new instance" />
-    <MESSAGE value="Improving readme.md file" />
     <MESSAGE value="Improving readme.md file&#10;got rid of 3 times execution, move it to single time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving readme.md file&#10;got rid of 3 times execution, move it to single time" />
+    <MESSAGE value="Improving readme.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving readme.md file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1236,8 +1243,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="331">
-            <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <first_editor relative-caret-position="171">
+            <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             <folding />
           </first_editor>
           <second_editor />

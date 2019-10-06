@@ -6,6 +6,8 @@ When we create new instance in the loop, I don't understand why [StreamDataMappe
 
 Also notice, how [NonLambdaStreamDataMapper](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) performs better than [Stream with Lambdas](src/com/xnsio/perf/StreamDataMapper.java)
 
+As expected, [PrimitiveDataMapper](src/com/xnsio/perf/PrimitiveDataMapper.java) is performing the worst. The overheads of spanning a thread is not worth when we are performing a trivial operation inside the parallel stream.
+
 Below is the stats from one of the runs
 
 | Type              | Instance | Mem   | Time    |
