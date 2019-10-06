@@ -1,25 +1,25 @@
 package com.xnsio.perf;
 
-import static java.lang.Runtime.getRuntime;
-import static java.lang.System.nanoTime;
+import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-import javafx.util.Pair;
+import static java.lang.Runtime.getRuntime;
+import static java.lang.System.nanoTime;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         List<Pair<String, String>> input = buildInput();
         int loopCount = args.length == 1 ? Integer.parseInt(args[0]) : 20000;
-        execute(input, loopCount, "For", ForDataMapper::executeFor);
-        execute(input, loopCount, "ForEach", ForEachDataMapper::executeForEach);
-        execute(input, loopCount, "Stream", StreamDataMapper::executeStream);
-        execute(input, loopCount, "Static Stream", StaticStreamDataMapper::executeStream);
-        execute(input, loopCount, "Primitive", PrimitiveDataMapper::executePrimitive);
-        execute(input, loopCount, "Parallel Streams", ParallelStreamDataMapper::executeParallelStream);
-        execute(input, loopCount, "Non Lambda Streams", NonLambdaStreamDataMapper::executeStream);
+        execute(input, loopCount, "---For---", ForDataMapper::executeFor);
+        execute(input, loopCount, "---ForEach---", ForEachDataMapper::executeForEach);
+        execute(input, loopCount, "---Stream---", StreamDataMapper::executeStream);
+        execute(input, loopCount, "---Static Stream---", StaticStreamDataMapper::executeStream);
+        execute(input, loopCount, "---Primitive---", PrimitiveDataMapper::executePrimitive);
+        execute(input, loopCount, "---Parallel Streams---", ParallelStreamDataMapper::executeParallelStream);
+        execute(input, loopCount, "---Non Lambda Streams---", NonLambdaStreamDataMapper::executeStream);
     }
 
     private static void execute(final List<Pair<String, String>> input, int loopCount, String name, Function<List<Pair<String, String>>, Boolean> function)
