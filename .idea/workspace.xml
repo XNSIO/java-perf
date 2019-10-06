@@ -108,8 +108,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="171">
-                <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <first_editor relative-caret-position="331">
+                <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -902,7 +902,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570351142228</updated>
-      <workItem from="1570351143577" duration="12417000" />
+      <workItem from="1570351143577" duration="12606000" />
     </task>
     <task id="LOCAL-00001" summary="cleanup">
       <created>1570352001930</created>
@@ -967,7 +967,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570379947814</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Improving readme.md file">
+      <created>1570380107403</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570380107403</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Improving readme.md file">
+      <created>1570380242947</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1570380242947</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -988,7 +1002,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12417000" />
+    <option name="totallyTimeSpent" value="12606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -1243,8 +1257,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="171">
-            <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <first_editor relative-caret-position="331">
+            <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

@@ -18,8 +18,8 @@ Below is the stats from one of the runs
 | [For Loop](src/com/xnsio/perf/ForDataMapper.java)          | Per Loop | 33 MB |  71 MS |
 | [ForEach](src/com/xnsio/perf/ForEachDataMapper.java)           | Single   |  1 MB |   43 MS |
 | [ForEach](src/com/xnsio/perf/ForEachDataMapper.java)           | Per Loop | 31 MB |  76 MS |
-| [If-Else](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Single   |  1 MB |  179 MS |
-| [If-Else](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Per Loop |  3 MB | 119 MS |
+| [If-Else Inside For Loop](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Single   |  1 MB |  179 MS |
+| [If-Else Inside For Loop](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Per Loop |  3 MB | 119 MS |
 | [Stream](src/com/xnsio/perf/StreamDataMapper.java)            | Single   |  1 MB |   44 MS |
 | [Stream](src/com/xnsio/perf/StreamDataMapper.java)            | Per Loop | 32 MB |  54 MS |
 | [Static Stream](src/com/xnsio/perf/StaticStreamDataMapper.java)     | Single   |  1 MB |   38 MS |
