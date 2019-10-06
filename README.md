@@ -1,8 +1,10 @@
 # Java Performance
 
-When you run the main method, you will notice that on a single instance the [NonLambdaStreamDataMapper](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) and on new instance per loop the [StaticStreamDataMapper](src/com/xnsio/perf/StaticStreamDataMapper.java) is performing the best respectively. 
+When you run the main method, you will notice that [StaticStreamDataMapper](src/com/xnsio/perf/StaticStreamDataMapper.java) is performing the best. 
 
 When we create new instance in the loop, I don't understand why [StreamDataMapper](src/com/xnsio/perf/StreamDataMapper.java) is taking 30x more memory?
+
+Also notice, how [NonLambdaStreamDataMapper](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) performs better than [Stream with Lambdas](src/com/xnsio/perf/StreamDataMapper.java)
 
 Below is the stats from one of the runs
 
