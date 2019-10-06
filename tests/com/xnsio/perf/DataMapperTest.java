@@ -25,11 +25,11 @@ public class DataMapperTest {
     }
 
     private void assertDataBucket(BucketData data) {
-        assertEquals("1", data.getOne());
-        assertEquals("2", data.getTwo());
-        assertEquals("3", data.getThree());
-        assertEquals("4", data.getFour());
-        assertEquals("13", data.getThirteen());
+        assertEquals("1", data.get_1());
+        assertEquals("2", data.get_2());
+        assertEquals("3", data.get_3());
+        assertEquals("4", data.get_4());
+        assertEquals("13", data.get_13());
+        assertEquals("35", data.get_35());
     }
-
 }

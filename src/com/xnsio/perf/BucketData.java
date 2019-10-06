@@ -1,19 +1,19 @@
 package com.xnsio.perf;
 
 public class BucketData {
-    private String one;
-    private String two;
-    private String three;
-    private String four;
-    private String five;
-    private String six;
-    private String seven;
-    private String eight;
-    private String nine;
-    private String ten;
-    private String eleven;
-    private String twelve;
-    private String thirteen;
+    private String _1;
+    private String _2;
+    private String _3;
+    private String _4;
+    private String _5;
+    private String _6;
+    private String _7;
+    private String _8;
+    private String _9;
+    private String _10;
+    private String _11;
+    private String _12;
+    private String _13;
     private String _14;
     private String _15;
     private String _16;
@@ -37,109 +37,109 @@ public class BucketData {
     private String _34;
     private String _35;
 
-    public String getOne() {
-        return one;
+    public String get_1() {
+        return _1;
     }
 
-    public void setOne(String one) {
-        this.one = one;
+    public void set_1(String _1) {
+        this._1 = _1;
     }
 
-    public String getTwo() {
+    public String get_2() {
 
-        return two;
+        return _2;
     }
 
-    public void setTwo(String two) {
-        this.two = two;
+    public void set_2(String _2) {
+        this._2 = _2;
     }
 
-    public String getThree() {
-        return three;
+    public String get_3() {
+        return _3;
     }
 
-    public void setThree(String three) {
-        this.three = three;
+    public void set_3(String _3) {
+        this._3 = _3;
     }
 
-    public String getFour() {
-        return four;
+    public String get_4() {
+        return _4;
     }
 
-    public void setFour(String four) {
-        this.four = four;
+    public void set_4(String _4) {
+        this._4 = _4;
     }
 
-    public String getFive() {
-        return five;
+    public String get_5() {
+        return _5;
     }
 
-    public void setFive(String five) {
-        this.five = five;
+    public void set_5(String _5) {
+        this._5 = _5;
     }
 
-    public String getSix() {
-        return six;
+    public String get_6() {
+        return _6;
     }
 
-    public void setSix(String six) {
-        this.six = six;
+    public void set_6(String _6) {
+        this._6 = _6;
     }
 
-    public String getSeven() {
-        return seven;
+    public String get_7() {
+        return _7;
     }
 
-    public void setSeven(String seven) {
-        this.seven = seven;
+    public void set_7(String _7) {
+        this._7 = _7;
     }
 
-    public String getEight() {
-        return eight;
+    public String get_8() {
+        return _8;
     }
 
-    public void setEight(String eight) {
-        this.eight = eight;
+    public void set_8(String _8) {
+        this._8 = _8;
     }
 
-    public String getNine() {
-        return nine;
+    public String get_9() {
+        return _9;
     }
 
-    public void setNine(String nine) {
-        this.nine = nine;
+    public void set_9(String _9) {
+        this._9 = _9;
     }
 
-    public String getTen() {
-        return ten;
+    public String get_10() {
+        return _10;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void set_10(String _10) {
+        this._10 = _10;
     }
 
-    public String getEleven() {
-        return eleven;
+    public String get_11() {
+        return _11;
     }
 
-    public void setEleven(String eleven) {
-        this.eleven = eleven;
+    public void set_11(String _11) {
+        this._11 = _11;
     }
 
-    public String getTwelve() {
-        return twelve;
+    public String get_12() {
+        return _12;
     }
 
-    public void setTwelve(String twelve) {
-        this.twelve = twelve;
+    public void set_12(String _12) {
+        this._12 = _12;
     }
 
-    public String getThirteen() {
-        return thirteen;
+    public String get_13() {
+        return _13;
     }
 
-    public void setThirteen(String thirteen) {
-        this.thirteen = thirteen;
+    public void set_13(String _13) {
+        this._13 = _13;
     }
 
     public String get_14() {

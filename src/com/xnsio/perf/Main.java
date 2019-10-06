@@ -45,19 +45,19 @@ public class Main {
 
     public static List<Pair<String, String>> buildInput() {
         List<Pair<String, String>> input = new ArrayList<>();
-        input.add(new Pair<>("One", "1"));
-        input.add(new Pair<>("Two", "2"));
-        input.add(new Pair<>("Three", "3"));
-        input.add(new Pair<>("Four", "4"));
-        input.add(new Pair<>("Five", "5"));
-        input.add(new Pair<>("Six", "6"));
-        input.add(new Pair<>("Seven", "7"));
-        input.add(new Pair<>("Eight", "8"));
-        input.add(new Pair<>("Nine", "9"));
-        input.add(new Pair<>("Ten", "10"));
-        input.add(new Pair<>("Eleven", "11"));
-        input.add(new Pair<>("Twelve", "12"));
-        input.add(new Pair<>("Thirteen", "13"));
+        input.add(new Pair<>("_1", "1"));
+        input.add(new Pair<>("_2", "2"));
+        input.add(new Pair<>("_3", "3"));
+        input.add(new Pair<>("_4", "4"));
+        input.add(new Pair<>("_5", "5"));
+        input.add(new Pair<>("_6", "6"));
+        input.add(new Pair<>("_7", "7"));
+        input.add(new Pair<>("_8", "8"));
+        input.add(new Pair<>("_9", "9"));
+        input.add(new Pair<>("_10", "10"));
+        input.add(new Pair<>("_11", "11"));
+        input.add(new Pair<>("_12", "12"));
+        input.add(new Pair<>("_13", "13"));
         input.add(new Pair<>("_14", "14"));
         input.add(new Pair<>("_15", "15"));
         input.add(new Pair<>("_16", "16"));

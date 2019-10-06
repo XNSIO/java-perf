@@ -14,82 +14,82 @@ public class NonLambdaStreamDataMapper {
     private final Map<String, Function> fieldFunctions = new HashMap<>(40, 1);
 
     public NonLambdaStreamDataMapper() {
-        fieldFunctions.put("one", new Function() {
+        fieldFunctions.put("_1", new Function() {
             @Override
             public void execute(BucketData bucket, Pair<String, String> pair) {
-                data.setOne(pair.getValue());
+                data.set_1(pair.getValue());
             }
         });
-        fieldFunctions.put("two", new Function() {
+        fieldFunctions.put("_2", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setTwo(pair.getValue());
+                data.set_2(pair.getValue());
             }
         });
-        fieldFunctions.put("three", new Function() {
+        fieldFunctions.put("_3", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setThree(pair.getValue());
+                data.set_3(pair.getValue());
             }
         });
-        fieldFunctions.put("four", new Function() {
+        fieldFunctions.put("_4", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setFour(pair.getValue());
+                data.set_4(pair.getValue());
             }
         });
-        fieldFunctions.put("five", new Function() {
+        fieldFunctions.put("_5", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setFive(pair.getValue());
+                data.set_5(pair.getValue());
             }
         });
-        fieldFunctions.put("six", new Function() {
+        fieldFunctions.put("_6", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setSix(pair.getValue());
+                data.set_6(pair.getValue());
             }
         });
-        fieldFunctions.put("seven", new Function() {
+        fieldFunctions.put("_7", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setSeven(pair.getValue());
+                data.set_7(pair.getValue());
             }
         });
-        fieldFunctions.put("eight", new Function() {
+        fieldFunctions.put("_8", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setEight(pair.getValue());
+                data.set_8(pair.getValue());
             }
         });
-        fieldFunctions.put("nine", new Function() {
+        fieldFunctions.put("_9", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setNine(pair.getValue());
+                data.set_9(pair.getValue());
             }
         });
-        fieldFunctions.put("ten", new Function() {
+        fieldFunctions.put("_10", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setTen(pair.getValue());
+                data.set_10(pair.getValue());
             }
         });
-        fieldFunctions.put("eleven", new Function() {
+        fieldFunctions.put("_11", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setEleven(pair.getValue());
+                data.set_11(pair.getValue());
             }
         });
-        fieldFunctions.put("twelve", new Function() {
+        fieldFunctions.put("_12", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setTwelve(pair.getValue());
+                data.set_12(pair.getValue());
             }
         });
-        fieldFunctions.put("thirteen", new Function() {
+        fieldFunctions.put("_13", new Function() {
             @Override
             public void execute(BucketData data, Pair<String, String> pair) {
-                data.setThirteen(pair.getValue());
+                data.set_13(pair.getValue());
             }
         });
 
