@@ -11,7 +11,7 @@ public class NonLambdaStreamDataMapper {
         void execute(BucketData bucket, Pair<String, String> pair);
     }
     private final BucketData data = new BucketData();
-    private final Map<String, Function> fieldFunctions = new HashMap<>();
+    private final Map<String, Function> fieldFunctions = new HashMap<>(40, 1);
 
     public NonLambdaStreamDataMapper() {
         fieldFunctions.put("one", new Function() {

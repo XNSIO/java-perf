@@ -9,7 +9,7 @@ import java.util.function.BiConsumer;
 
 public class ParallelStreamDataMapper {
     private final BucketData data = new BucketData();
-    private final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<>();
+    private final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<>(40, 1);
 
     public ParallelStreamDataMapper() {
         fieldFunctions.put("one", (data1, pair) -> data1.setOne(pair.getValue()));
