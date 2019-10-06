@@ -9,8 +9,71 @@ public class PrimitiveDataMapper {
 
     public void execute(List<Pair<String, String>> input) {
         for (Pair<String, String> pair : input)
-
-            if (pair.getKey().equalsIgnoreCase("One"))
+            if (pair.getKey().equalsIgnoreCase("yuyi"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("yiuiu"))
+                data.DoNothing();
+            else if (pair.getKey().equalsIgnoreCase("One"))
                 data.setOne(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("Two"))
                 data.setTwo(pair.getValue());
