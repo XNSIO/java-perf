@@ -8,13 +8,6 @@ public class PrimitiveDataMapper {
     private BucketData data = new BucketData();
 
     public Boolean execute(List<Pair<String, String>> input) {
-        go(input);
-        go(input);
-        go(input);
-        return true;
-    }
-
-    private void go(List<Pair<String, String>> input) {
         for (Pair<String, String> pair : input)
             if (pair.getKey().equalsIgnoreCase("_1"))
                 data.set_1(pair.getValue());
@@ -86,6 +79,7 @@ public class PrimitiveDataMapper {
                 data.set_34(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("_35"))
                 data.set_35(pair.getValue());
+        return true;
     }
 
     public BucketData getData() {
@@ -93,9 +87,6 @@ public class PrimitiveDataMapper {
     }
 
     public static Boolean _execute(List<Pair<String, String>> input) {
-        PrimitiveDataMapper dataMapper = new PrimitiveDataMapper();
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        return dataMapper.execute(input);
+        return new PrimitiveDataMapper().execute(input);
     }
 }

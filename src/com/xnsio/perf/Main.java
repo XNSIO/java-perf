@@ -33,7 +33,7 @@ public class Main {
             throws InterruptedException {
         Runtime runtime = getRuntime();
         System.gc();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         long startTime = nanoTime();
         long initialMemoryUsed = memUsed(runtime);
         for (int i = 0; i < loopCount; ++i)

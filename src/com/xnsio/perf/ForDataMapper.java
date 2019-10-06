@@ -50,19 +50,13 @@ public class ForDataMapper {
     }
 
     public Boolean execute(List<Pair<String, String>> input) {
-        go(input);
-        go(input);
-        go(input);
-        return true;
-    }
-
-    private void go(List<Pair<String, String>> input) {
         for (int i = 0; i < input.size(); i++) {
             Pair<String, String> pair = input.get(i);
             BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         }
+        return true;
     }
 
     public BucketData getData() {
@@ -70,9 +64,6 @@ public class ForDataMapper {
     }
 
     public static Boolean _execute(List<Pair<String, String>> input) {
-        ForDataMapper dataMapper = new ForDataMapper();
-        dataMapper.execute(input);
-        dataMapper.execute(input);
-        return dataMapper.execute(input);
+        return new ForDataMapper().execute(input);
     }
 }

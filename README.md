@@ -8,17 +8,17 @@ Below is the stats from one of the runs
 
 | Type              | Instance | Mem   | Time    |
 |-------------------|----------|-------|-------- |
-| [For Loop](src/com/xnsio/perf/ForDataMapper.java)          | Single   |  2 MB |   87 MS |
-| [For Loop](src/com/xnsio/perf/ForDataMapper.java)          | Per Loop | 33 MB |  222 MS |
-| ForEach           | Single   |  2 MB |   79 MS |
-| ForEach           | Per Loop | 38 MB |  194 MS |
-| If-Else           | Single   |  1 MB |  392 MS |
-| If-Else           | Per Loop |  3 MB | 1025 MS |
-| Stream            | Single   |  1 MB |   87 MS |
-| Stream            | Per Loop | 33 MB |  215 MS |
-| Static Stream     | Single   |  1 MB |   81 MS |
-| Static Stream     | Per Loop |  4 MB |  181 MS |
-| Non-Lambda Stream | Single   |  1 MB |   69 MS |
-| Non-Lambda Stream | Per Loop | 24 MB |  152 MS |
-| Parallel Stream   | Single   | 44 MB |  479 MS |
-| Parallel Stream   | Per Loop | 43 MB | 1115 MS |
+| [For Loop](src/com/xnsio/perf/ForDataMapper.java)          | Single   |  2 MB |   45 MS |
+| [For Loop](src/com/xnsio/perf/ForDataMapper.java)          | Per Loop | 33 MB |  71 MS |
+| [ForEach](src/com/xnsio/perf/ForEachDataMapper.java)           | Single   |  1 MB |   43 MS |
+| [ForEach](src/com/xnsio/perf/ForEachDataMapper.java)           | Per Loop | 31 MB |  76 MS |
+| [If-Else](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Single   |  1 MB |  179 MS |
+| [If-Else](src/com/xnsio/perf/PrimitiveDataMapper.java)           | Per Loop |  3 MB | 119 MS |
+| [Stream](src/com/xnsio/perf/StreamDataMapper.java)            | Single   |  1 MB |   44 MS |
+| [Stream](src/com/xnsio/perf/StreamDataMapper.java)            | Per Loop | 32 MB |  54 MS |
+| [Static Stream](src/com/xnsio/perf/StaticStreamDataMapper.java)     | Single   |  1 MB |   38 MS |
+| [Static Stream](src/com/xnsio/perf/StaticStreamDataMapper.java)     | Per Loop |  3 MB |  27 MS |
+| [Non-Lambda Stream](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) | Single   |  1 MB |   40 MS |
+| [Non-Lambda Stream](src/com/xnsio/perf/NonLambdaStreamDataMapper.java) | Per Loop | 22 MB |  27 MS |
+| [Parallel Stream](src/com/xnsio/perf/ParallelStreamDataMapper.java)   | Single   | 58 MB |  436 MS |
+| [Parallel Stream](src/com/xnsio/perf/ParallelStreamDataMapper.java)   | Per Loop | 28 MB | 300 MS |
