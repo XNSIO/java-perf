@@ -9,7 +9,7 @@ import java.util.function.BiConsumer;
 
 public class StaticStreamDataMapper {
     private final BucketData data = new BucketData();
-    private static final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<String, BiConsumer<BucketData, Pair<String, String>>>(40, .95f) {
+    private static final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<String, BiConsumer<BucketData, Pair<String, String>>>(40, 1) {
         {
             put("_1", (data, pair) -> data.set_1(pair.getValue()));
             put("_2", (data, pair) -> data.set_2(pair.getValue()));
