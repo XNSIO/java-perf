@@ -1,6 +1,5 @@
 package com.xnsio.perf;
 
-import javafx.util.Pair;
 import org.junit.Test;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class DataMapperTest {
-    private final List<Pair<String, String>> input = Main.buildInput();
+    private final List<Pair> input = Main.buildInput();
 
     @Test
     public void test() {

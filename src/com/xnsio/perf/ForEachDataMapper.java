@@ -1,7 +1,5 @@
 package com.xnsio.perf;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,7 +7,7 @@ import java.util.function.BiConsumer;
 
 public class ForEachDataMapper {
     private final BucketData data = new BucketData();
-    private final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<>(40, 1);
+    private final Map<String, BiConsumer<BucketData, Pair>> fieldFunctions = new HashMap<>(40, 1);
 
     public ForEachDataMapper() {
         fieldFunctions.put("_1", (data1, pair) -> data1.set_1(pair.getValue()));
@@ -49,9 +47,9 @@ public class ForEachDataMapper {
         fieldFunctions.put("_35", (data1, pair) -> data1.set_35(pair.getValue()));
     }
 
-    public Boolean execute(List<Pair<String, String>> input) {
-        for (Pair<String, String> pair : input) {
-            BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
+    public Boolean execute(List<Pair> input) {
+        for (Pair pair : input) {
+            BiConsumer<BucketData, Pair> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         }
@@ -62,7 +60,7 @@ public class ForEachDataMapper {
         return data;
     }
 
-    public static Boolean _execute(List<Pair<String, String>> input) {
+    public static Boolean _execute(List<Pair> input) {
         return new ForEachDataMapper().execute(input);
     }
 }

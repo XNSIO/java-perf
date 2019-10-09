@@ -1,14 +1,12 @@
 package com.xnsio.perf;
 
-import javafx.util.Pair;
-
 import java.util.List;
 
 public class PrimitiveDataMapper {
     private BucketData data = new BucketData();
 
-    public Boolean execute(List<Pair<String, String>> input) {
-        for (Pair<String, String> pair : input)
+    public Boolean execute(List<Pair> input) {
+        for (Pair pair : input)
             if (pair.getKey().equalsIgnoreCase("_1"))
                 data.set_1(pair.getValue());
             else if (pair.getKey().equalsIgnoreCase("_2"))
@@ -86,7 +84,7 @@ public class PrimitiveDataMapper {
         return data;
     }
 
-    public static Boolean _execute(List<Pair<String, String>> input) {
+    public static Boolean _execute(List<Pair> input) {
         return new PrimitiveDataMapper().execute(input);
     }
 }

@@ -1,7 +1,5 @@
 package com.xnsio.perf;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,7 +7,7 @@ import java.util.function.BiConsumer;
 
 public class StaticStreamDataMapper {
     private final BucketData data = new BucketData();
-    private static final Map<String, BiConsumer<BucketData, Pair<String, String>>> fieldFunctions = new HashMap<String, BiConsumer<BucketData, Pair<String, String>>>(40, 1) {
+    private static final Map<String, BiConsumer<BucketData, Pair>> fieldFunctions = new HashMap<>(40, 1) {
         {
             put("_1", (data, pair) -> data.set_1(pair.getValue()));
             put("_2", (data, pair) -> data.set_2(pair.getValue()));
@@ -49,9 +47,9 @@ public class StaticStreamDataMapper {
         }
     };
 
-    public Boolean execute(List<Pair<String, String>> input) {
+    public Boolean execute(List<Pair> input) {
         input.forEach(pair -> {
-            BiConsumer<BucketData, Pair<String, String>> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
+            BiConsumer<BucketData, Pair> consumer = fieldFunctions.get(pair.getKey().toLowerCase());
             if (consumer != null)
                 consumer.accept(data, pair);
         });
@@ -62,7 +60,7 @@ public class StaticStreamDataMapper {
         return data;
     }
 
-    public static Boolean _execute(List<Pair<String, String>> input) {
+    public static Boolean _execute(List<Pair> input) {
         return new StaticStreamDataMapper().execute(input);
     }
 }
