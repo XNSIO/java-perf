@@ -1,6 +1,6 @@
 # Java Performance
 
-When you run the main method, you will notice that [StaticStreamDataMapper](src/com/xnsio/perf/StaticStreamDataMapper.java) is performing the best from time perspective. [StreamDataMapper](src/com/xnsio/perf/StreamDataMapper.java) is performing the best from memory perspective?
+When you run the main method, you will notice that [StaticStreamDataMapper](src/com/xnsio/perf/StaticStreamDataMapper.java) is performing the best from time perspective. [StreamDataMapper](src/com/xnsio/perf/StreamDataMapper.java) is performing the best from memory perspective.
 
 I'm not sure why [Loop with if-else](src/com/xnsio/perf/PrimitiveDataMapper.java) is performing so badly. Why is the compiler not optimising it?
 
