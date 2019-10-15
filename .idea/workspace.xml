@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59d0b854-f912-4e6e-8672-cb1471035fbc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xnsio/perf/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="59d0b854-f912-4e6e-8672-cb1471035fbc" name="Default" comment="replaced javafx.Pair with custom pair class">
+      <change afterPath="$PROJECT_DIR$/Jio.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/ForDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/ForDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/ForEachDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/ForEachDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/NonLambdaStreamDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/NonLambdaStreamDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/ParallelStreamDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/ParallelStreamDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/PrimitiveDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/PrimitiveDataMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/StaticStreamDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/StaticStreamDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xnsio/perf/StreamDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xnsio/perf/StreamDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/com/xnsio/perf/DataMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/xnsio/perf/DataMapperTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +18,10 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Downloads" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Perf_Parallel_Streams" />
@@ -65,8 +61,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$USER_HOME$/projects/data-mapper-demo" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="terminal" />
@@ -75,6 +71,9 @@
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.xnsio.perf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.xnsio.perf" />
@@ -92,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DataMapperTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="ArquillianJUnit" factoryName="">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -455,8 +454,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DataMapperTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DataMapperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -576,25 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1570612268180</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="replaced javafx.Pair with custom pair class">
+      <created>1570634271478</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1570634271478</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="DataMapperTest - 2019.10.06 at 14h 10m 45s.xml">
-      <configuration name="DataMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataMapperTest - 2019.10.06 at 16h 04m 34s.xml">
-      <configuration name="DataMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataMapperTest - 2019.10.06 at 16h 10m 33s.xml">
-      <configuration name="DataMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataMapperTest - 2019.10.06 at 16h 12m 43s.xml">
-      <configuration name="DataMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataMapperTest - 2019.10.06 at 22h 03m 06s.xml">
-      <configuration name="DataMapperTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="17176000" />
@@ -604,7 +593,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -629,7 +620,8 @@
     <MESSAGE value="Improving readme.md file&#10;got rid of 3 times execution, move it to single time" />
     <MESSAGE value="Improving readme.md file" />
     <MESSAGE value="had missed setting the load factor of the hashmap to 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="had missed setting the load factor of the hashmap to 1" />
+    <MESSAGE value="replaced javafx.Pair with custom pair class" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced javafx.Pair with custom pair class" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
